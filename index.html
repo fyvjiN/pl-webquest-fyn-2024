@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Linear</title>
+    <!-- Link do Bootstrap 4 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="C:\Users\Yuji\Desktop\Webquest\css\style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">WebQuest - Flavio Yuji Nakano RA: 1430482423025</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#historia">História</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#conceitos">Conceitos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#videos">Vídeos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="objetivo" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Objetivos</h2>
+            <div class="row">
+                <!-- Coluna para o texto -->
+                <div class="col-md-6">
+                    <p>O intuito deste site é fornecer informações claras e objetivas sobre a Programação Linear, incluindo sua
+                        história, conceitos fundamentais e aplicações práticas. Aqui, os usuários poderão explorar conteúdos
+                        teóricos, assistir a vídeos educativos e aprofundar seu conhecimento em tópicos como otimização,
+                        matrizes e sistemas lineares, contribuindo para o aprendizado de forma interativa e acessível.
+                    </p>
+                </div>
+                <!-- Coluna para a imagem SVG -->
+                <div class="col-md-6">
+                    <img src="C:\Users\Yuji\Desktop\Webquest\svg\Calculator-rafiki.svg" alt="Imagem ilustrativa sobre Programação Linear" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção História -->
+    <section id="historia" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">História da Programação Linear</h2>
+            <p>
+                A programação linear é uma área da matemática aplicada, usada para resolver problemas de otimização com
+                restrições. Sua importância cresceu após inovações no século XX, com aplicações em diversas áreas como
+                produção, transporte e economia. O conceito surgiu com Fourier em 1826, mas foi Kantorovich, em 1939,
+                que criou um algoritmo prático para resolvê-lo. Dantzig, na década de 1940, desenvolveu o Algoritmo
+                Simplex e aplicou a programação linear a problemas econômicos. Em 1975, Kantorovich e Koopmans ganharam
+                o Nobel por suas contribuições, enquanto Dantzig ficou reconhecido como um dos principais responsáveis
+                pela evolução dessa área.
+            </p>
+            <!-- Mini Biografias -->
+            <div class="row text-center mt-4">
+                <!-- Fourier -->
+                <div class="col-md-3 mb-4">
+                    <img src="C:\Users\Yuji\Desktop\Webquest\imgs\fourier.jpg" alt="Imagem de Fourier" class="rounded-circle img-fluid mb-2 autores">
+                    <h5>Joseph Fourier</h5>
+                    <p>Matemático francês pioneiro no estudo das transformações matemáticas e precursor da programação linear.</p>
+                </div>
+                <!-- Kantorovich -->
+                <div class="col-md-3 mb-4">
+                    <img src="C:\Users\Yuji\Desktop\Webquest\imgs\kantorovich.jpg" alt="Imagem de Kantorovich" class="rounded-circle img-fluid mb-2 autores">
+                    <h5>Leonid Kantorovich</h5>
+                    <p>Matemático russo que criou métodos práticos para otimização, ganhador do Nobel em 1975.</p>
+                </div>
+                <!-- Koopmans -->
+                <div class="col-md-3 mb-4">
+                    <img src="C:\Users\Yuji\Desktop\Webquest\imgs\Koopmans.jpg" alt="Imagem de Koopmans" class="rounded-circle img-fluid mb-2 autores">
+                    <h5>Tjalling Koopmans</h5>
+                    <p>Economista que contribuiu para a aplicação da programação linear na economia, Nobel em 1975.</p>
+                </div>
+                <!-- Dantzig -->
+                <div class="col-md-3 mb-4">
+                    <img src="C:\Users\Yuji\Desktop\Webquest\imgs\dantzig.jpg" alt="Imagem de Dantzig" class="rounded-circle img-fluid mb-2 autores">
+                    <h5>George Dantzig</h5>
+                    <p>Matemático americano que desenvolveu o Algoritmo Simplex, revolucionando a programação linear.</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section id="conceitos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Conceitos Fundamentais de Programação Linear</h2>
+            <p class="text-center">Explore os principais conceitos que fundamentam a Programação Linear e suas aplicações.</p>
+            <div id="carouselConceitos" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselConceitos" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselConceitos" data-slide-to="1"></li>
+                </ol>
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sistemas Lineares</h5>
+                                        <p class="card-text">Resolução de equações lineares para encontrar soluções em problemas de otimização.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Método Gráfico</h5>
+                                        <p class="card-text">Visualização geométrica das soluções de sistemas lineares em até duas variáveis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Dualidade</h5>
+                                        <p class="card-text">Estudo da relação entre problemas de otimização primários e seus duals.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Operações com Matrizes</h5>
+                                        <p class="card-text">Manipulação de matrizes para resolver problemas lineares e interpretar resultados.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Algoritmo Simplex</h5>
+                                        <p class="card-text">Método eficiente para encontrar soluções ótimas em problemas de PL.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Análise de Sensibilidade</h5>
+                                        <p class="card-text">Estudo das variações em restrições e como elas afetam a solução ótima.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Controles -->
+                <a class="carousel-control-prev" href="#carouselConceitos" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselConceitos" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+      
+    <!-- Seção Vídeos -->
+    <section id="videos" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Vídeos Educativos</h2>
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#videoCarousel" data-slide-to="1"></li>
+                    <li data-target="#videoCarousel" data-slide-to="2"></li>
+                    <li data-target="#videoCarousel" data-slide-to="3"></li>
+                    <li data-target="#videoCarousel" data-slide-to="4"></li>
+                    <li data-target="#videoCarousel" data-slide-to="5"></li>
+                    <li data-target="#videoCarousel" data-slide-to="6"></li>
+                </ol>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/7csw_j35F5A?si=P-E7qngcOtT5qc1i"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/KKCmjnU2y3o?si=25rA24kiAbFw9Zcg"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/f1jstm2I8KA?si=CI8LPptGFIB-ObKx"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/oQY9yrbQ2bU?si=0NllvYsex4rcTbBc"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/PpUDPQ6txm0?si=BWsSDXCWb2RfP82r"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/McxwCN-w0pE?si=sY2ABcqPu69_ReZP"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item"
+                                src="https://www.youtube.com/embed/roYKo0bk7fQ?si=M_-7lBMOVrQAijjg"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles -->
+                <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>Flavio Yuji Nakano - RA: 1430482423025</p>
+        </div>
+    </footer>
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
